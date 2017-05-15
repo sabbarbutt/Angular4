@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Angular 2 Developer</title>
+  	<base href="https://sabbarbutt.github.io/Angular4/">
+<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
+
+<!-- Custom CSS -->
+<link href="assets/css/freelancer.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+
+<body id="page-top" class="index">
+  <app-root>Loading...</app-root>
+ <!-- jQuery Version 1.11.0 -->
+    <script src="assets/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="assets/js/freelancer.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+	<script src="assets/js/jquery.classyloader.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+
+    <script>
+	$( document ).ready(function() {
+		var CircleAnimationState=0;
+    	function AnimateCircles(){
+		$('.skill1').ClassyLoader({
+			speed: 5,
+			diameter: 60,
+			fontSize: '30px',
+			fontweight:'bold',
+			fontFamily: 'Lato',
+			fontColor: 'rgb(44,62,80)',
+			lineColor: 'rgb(44,62,80)',
+			percentage: 95,
+			lineWidth: 8,
+			remainingLineColor: 'rgb(24,188,156)'
+		});
+		$('.skill2').ClassyLoader({
+			speed: 9.5,
+			diameter: 60,
+			fontSize: '30px',
+			fontweight:'bold',
+			fontFamily: 'Lato',
+			fontColor: 'rgb(44,62,80)',
+			lineColor: 'rgb(44,62,80)',
+			percentage: 95,
+			lineWidth: 8,
+			remainingLineColor: 'rgb(24,188,156)'
+		});
+		$('.skill3').ClassyLoader({
+			speed: 7.5,
+			diameter: 60,
+			fontSize: '30px',
+			fontweight:'bold',
+			fontFamily: 'Lato',
+			fontColor: 'rgb(44,62,80)',
+			lineColor: 'rgb(44,62,80)',
+			percentage: 75,
+			lineWidth: 8,
+			remainingLineColor: 'rgb(24,188,156)'
+		});
+		$('.skill4').ClassyLoader({
+			speed: 7,
+			diameter: 60,
+			fontSize: '30px',
+			fontweight:'bold',
+			fontFamily: 'Lato',
+			fontColor: 'rgb(44,62,80)',
+			lineColor: 'rgb(44,62,80)',
+			percentage: 70,
+			lineWidth: 8,
+			remainingLineColor: 'rgb(24,188,156)'
+		});
+		$('.skill5').ClassyLoader({
+			speed: 6.5,
+			diameter: 60,
+			fontSize: '30px',
+			fontweight:'bold',
+			fontFamily: 'Lato',
+			fontColor: 'rgb(44,62,80)',
+			lineColor: 'rgb(44,62,80)',
+			percentage: 65,
+			lineWidth: 8,
+			remainingLineColor: 'rgb(24,188,156)'
+		});
+		$('.skill6').ClassyLoader({
+			speed: 9,
+			diameter: 60,
+			fontSize: '30px',
+			fontweight:'bold',
+			fontFamily: 'Lato',
+			fontColor: 'rgb(44,62,80)',
+			lineColor: 'rgb(44,62,80)',
+			percentage: 90,
+			lineWidth: 8,
+			remainingLineColor: 'rgb(24,188,156)'
+		});	
+	}
+		AnimateCircles();
+		$('.skill_trigger').click(function(){
+			setTimeout(function(){
+				AnimateCircles()
+				},1000);
+			});
+		/*$('#skills').waypoint(function(direction) {
+			if(direction=='up'){
+				AnimateCircles();
+			}
+		});*/
+		
+		$('.skills_tracker').waypoint(function(direction) {
+		if(direction=='down'){
+			AnimateCircles();
+		}
+		});
+		
+		
+	});
+	 $(function(){
+
+        $(".skills").typed({
+            strings: ["MORE THAN 5 YEARS EXPERIENCE IN DEVELOPING & DESIGNING WEBSITES.",
+			 "MORE THAN 5 YEARS EXPERIENCE IN DEVELOPING & DESIGNING WEBSITES."],
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: true
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+    });
+    </script>
+<script type="text/javascript" src="inline.33d154f3239cc93f4228.bundle.js"></script><script type="text/javascript" src="polyfills.6ce0bf58446ef5c2585b.bundle.js"></script><script type="text/javascript" src="vendor.af8e62035737a22fb95f.bundle.js"></script><script type="text/javascript" src="main.bd6efd5b3e49aaee9199.bundle.js"></script></body>
+
+</html>
